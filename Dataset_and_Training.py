@@ -13,7 +13,7 @@ n = MLP(3, [4,4,1])
 
 for k in range (10):
 
-    ypred = [n([Value(xi) for xi in x]) for x in xs]
+    
     loss = 0
     for xi, yi in zip(xs, ys):
         xi = [Value(xij) for xij in xi]
